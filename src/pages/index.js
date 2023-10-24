@@ -4,7 +4,7 @@ const DEFAULT_CENTER = [-7.3797534, 109.2401397];
 const DEFAULT_MARKER = [-7.377049640788257, 109.24465090501957];
 export default function Home() {
   return (
-    <Map className={"w-auto h-auto"} center={DEFAULT_CENTER} zoom={13}>
+    <Map className={"w-auto h-auto"} center={DEFAULT_CENTER} zoom={16}>
       {({ TileLayer, Marker, Popup }) => (
         <>
           <TileLayer

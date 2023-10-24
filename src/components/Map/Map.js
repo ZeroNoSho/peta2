@@ -1,12 +1,10 @@
 import dynamic from "next/dynamic";
 import Menu from "@components/menu";
 import Legen from "@components/legend";
+import Menubar from "@components/menubtn";
 const DynamicMap = dynamic(() => import("./DynamicMap"), {
   ssr: false,
 });
-
-// Set default sizing to control aspect ratio which will scale responsively
-// but also help avoid layout shift
 
 const Map = (props) => {
   return (
@@ -17,6 +15,7 @@ const Map = (props) => {
       <Menu />
       <DynamicMap {...props} className={"z-0"} />
       <Legen />
+      <Menubar />
     </div>
   );
 };
