@@ -7,7 +7,7 @@ import { Contex } from "src/context/store";
 
 export default function Menu() {
   const { menus, setMenu } = useContext(Contex);
-  console.log(menus);
+ 
   return (
     <div className={`w-96 h-screen blue text-slate-100 h-auto ${menus}`}>
       <div>
