@@ -1,5 +1,5 @@
 import axios from "axios";
-export default function handler(res) {
+export default function handler(req, res) {
   axios
     .get(
       `https://platform.antares.id:8443/~/antares-cse/cnt-mGykEPht4B5B9eos?fu=1&drt=2&ty=4`,
