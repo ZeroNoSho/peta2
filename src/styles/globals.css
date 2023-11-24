@@ -18,12 +18,22 @@ a {
 * {
   box-sizing: border-box;
 }
-
+body {
+  background-color: rgb(255, 255, 255);
+}
 img {
   max-width: 100%;
   height: auto;
 }
 
+.wrapper {
+  overflow-x: auto;
+  overflow: auto;
+}
+
+.wrapper table {
+  white-space: nowrap;
+}
 /*Menu Map*/
 .blue {
   background-color: #485fc7;

@@ -7,7 +7,7 @@ import { Contex } from "src/context/store";
 
 export default function Menu() {
   const { menus, setMenu } = useContext(Contex);
- 
+
   return (
     <div className={`w-96 h-screen blue text-slate-100 h-auto ${menus}`}>
       <div>
@@ -56,7 +56,7 @@ export default function Menu() {
             <p className="basis-1/6 text-center">
               <FontAwesomeIcon icon={faCompass} />
             </p>
-            <Link href="/" className="basis-5/6">
+            <Link href="/list" className="basis-5/6">
               list sensor
             </Link>
           </div>
